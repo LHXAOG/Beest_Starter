@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>BEEST - Starter Guide</title>
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
-        <div class="container nav-content">
+        <div class="nav-inner">
             <h1 class="logo">#BEEST</h1>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#" class="btn">lorem</a></li>
+                    <li><a href="#">Setup</a></li>
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="#">Starter Projects</a></li>
                 </ul>
             </nav>
+            <div class="sticker">
+                <img src="assets/images/sticker.webp" alt="">
+            </div>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, ad!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim velit cupiditate molestias facere. Velit molestias amet explicabo nam nihil est pariatur officia quae molestiae accusantium? Rem dolorum totam corrupti?</p>
-            <a href="#" class="btn primary">Start Now</a>
-        </div>
-    </section>
+    <main class="main-content">
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-tag">v1.0 - Now Live</span>
+                <h2>THE COMPLETE BEEST STARTER GUIDE YOU WILL EVER NEED</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim velit cupiditate molestias facere.
+                    Velit molestias amet explicabo nam nihil est pariatur officia quae molestiae accusantium?</p>
+                <div class="btn-group">
+                    <a href="#" class="btn primary">Start Now</a>
+                    <a href="#" class="btn secondary">View Docs</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.querySelector('.navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>
